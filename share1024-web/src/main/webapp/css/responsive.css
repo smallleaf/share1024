@@ -1,0 +1,14 @@
+@media (max-width: 320px) { 
+	/* index page */
+	.home h1{
+		font-size: 45px;
+	}
+	
+	.home h2{
+		font-size: 30px;
+	}
+	
+	.intro-content {
+  		padding: 0;
+	}
+}
