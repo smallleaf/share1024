@@ -11,7 +11,6 @@
 	<artifactId>share1024-web</artifactId>
 	<packaging>war</packaging>
 	<name>bishe-web Maven Webapp</name>
-	<url>http://maven.apache.org</url>
 	<dependencies>
 		<dependency>
 			<groupId>com.share</groupId>
