@@ -125,24 +125,7 @@
 		</section>
 		
 		
-		<footer>
-			<div class="footer-bottom">
-				<div class="container">		
-					<div class="row">	
-						<div class="col-sm-12 text-center">
-							<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-							<ul class="list-inline center-block">
-								<li><a href="#"><img src="images/card-1.png"></a></li>
-								<li><a href="#"><img src="images/card-2.png"></a></li>
-								<li><a href="#"><img src="images/card-3.png"></a></li>
-								<li><a href="#"><img src="images/card-4.png"></a></li>
-								<li><a href="#"><img src="images/card-5.png"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</footer>
+		<%@ include file="footerCommon.jsp"%>
 		<%@ include file="../jstl/footerbase.inc"%>
 		<script type="text/javascript" src="${basePath}/js/showdown.min.js"></script>
 		<script type="text/javascript">

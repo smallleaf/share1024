@@ -629,14 +629,7 @@
 				<div class="container">		
 					<div class="row">	
 						<div class="col-sm-12 text-center">
-							<p>Copyright &copy; 2016.Company name All rights reserved.</p>
-							<ul class="list-inline center-block">
-								<li><a href="#"><img src="images/card-1.png"></a></li>
-								<li><a href="#"><img src="images/card-2.png"></a></li>
-								<li><a href="#"><img src="images/card-3.png"></a></li>
-								<li><a href="#"><img src="images/card-4.png"></a></li>
-								<li><a href="#"><img src="images/card-5.png"></a></li>
-							</ul>
+							<p>Copyright &copy; 2016.Company name All rights reserved.<a href="http://www.miitbeian.gov.cn">[鄂ICP备16022718号]</a></p>
 						</div>
 					</div>
 				</div>	
