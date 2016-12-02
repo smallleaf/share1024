@@ -6,6 +6,7 @@
 		<title>Share1024</title>
         <!-- ALL STYLESHEET -->
    	 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+   	 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">

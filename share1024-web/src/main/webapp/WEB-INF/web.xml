@@ -43,4 +43,12 @@
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	
+	
+	<mime-mapping>
+	　　<extension>ico</extension>
+	　　<mime-type>images/favicon.icon</mime-type>
+	</mime-mapping>
+
+
 </web-app>
