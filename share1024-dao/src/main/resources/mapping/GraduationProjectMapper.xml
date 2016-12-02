@@ -1,0 +1,36 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.share1024.dao.GraduationProjectDao">
+
+	<resultMap type="GraduationProject" id="GraduationProjectResult">
+		<id property="id" column="id"/>
+		<result property="projectType" column="bishe_type"/>
+		<result property="projectName" column="bishe_name"/>
+		<result property="projectDesc" column="bishe_desc"/>
+		<result property="projectGrade" column="bishe_grade"/>
+		<result property="projectPic" column="bishe_pic"/>
+		<result property="projectScanNum" column="bishe_scan_num"/>
+		<result property="contentUuid" column="content_uuid"/>
+		<result property="money" column="money"/>
+		<result property="recommendStatus" column="recommend_status"/>
+		<result property="createTime" column="create_time"/>
+		<result property="isDeleted" column="is_deleted"/>
+	</resultMap>
+	
+	<select id="findAll"  resultMap="GraduationProjectResult">
+		select * from share_bishe 
+	</select>
+	<select id="findByType"  resultMap="GraduationProjectResult"  parameterType="java.lang.Long">
+		select * from share_bishe where bishe_type=#{type}  order by update_time desc
+	</select>
+	<select id="findByTypeAndRecomment"  resultMap="GraduationProjectResult"  parameterType="java.lang.Long">
+		select * from share_bishe where bishe_type=#{type}  and recommend_status=1 order by update_time desc
+	</select>
+	
+	<insert id="save"  parameterType="GraduationProject">
+		insert into share_bishe (bishe_type,bishe_name,bishe_desc,money,content_uuid,recommend_status,bishe_pic,create_time)
+				values(#{projectType},#{projectName},#{projectDesc},#{money},#{contentUuid},#{recommendStatus},#{projectPic},SYSDATE())
+	</insert>
+</mapper>

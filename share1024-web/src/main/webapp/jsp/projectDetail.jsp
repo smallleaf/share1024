@@ -1,29 +1,19 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" %>
+<%@ include file="../jstl/base.inc"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
 		<title>ChinaZ</title>
         <!-- ALL STYLESHEET -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/style2.css" rel="stylesheet">
-		<script type="text/javascript" src="js/jquery.js"></script>
-		<script type="text/javascript" src="js/showdown.min.js"></script>
+		<link href="${basePath }/css/style2.css" rel="stylesheet">
 		<!--link href="css/blog-single.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet"-->
-		<script type="text/javascript">
-			$(function(){
-				$.post("test.do",function(data){
-					var converter = new showdown.Converter();
-					var html      = converter.makeHtml(data);
-					document.getElementById("content").innerHTML = html;
-				})
-			})
-		</script>
     </head>   
 	<body>
+		<div class="hide">
+			<input type="text" id="uuid" value="${uuid}"/>
+		</div>
 		<!-- header -->
 		<%@ include file="headerCommon.jsp"%>
 		<section class="blog-detail">
@@ -158,10 +148,20 @@
 				</div>	
 			</div>
 		</footer>
-			
-        <!-- ALL JAVASCRIPT -->         
-        <script src="js/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
+		<%@ include file="../jstl/footerbase.inc"%>
+		<script type="text/javascript" src="${basePath}/js/showdown.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+						/* var data=$("#contentHide").val();
+						var converter = new showdown.Converter();
+						var html      = converter.makeHtml(data);
+						document.getElementById("content").innerHTML = html; */
+					$.post("../getContent/content",{'uuid':$("#uuid").val()},function(data){
+						var converter = new showdown.Converter();
+						var html      = converter.makeHtml(data);
+						document.getElementById("content").innerHTML = html;
+					})
+			})
+		</script>
     </body>
 </html>

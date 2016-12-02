@@ -1,0 +1,22 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.share1024.dao.ShareFileDao">
+	<resultMap type="ShareFile" id="ShareFileResult">
+		<id property="id" column="id"/>
+		<result property="contentUuid" column="content_uuid"/>
+		<result property="content" column="content"/>
+		<result property="name" column="name"/>
+		<result property="size" column="size"/>
+		<result property="fileStatus" column="file_status"/>
+	</resultMap>
+
+	<insert id="save" parameterType="ShareFile">
+		insert into share_file (content_uuid,content,name,size,create_time) values(#{contentUuid},#{content},#{name},#{size},SYSDATE())
+	</insert>
+	
+	<select id="findByUUid" parameterType="java.lang.String" resultMap="ShareFileResult">
+		select * from share_file where content_uuid=#{contentUuid}
+	</select>
+</mapper>

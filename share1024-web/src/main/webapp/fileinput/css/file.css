@@ -1,0 +1,124 @@
+body {
+	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+	background-color: #ffffff;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.navbar-custom {
+	/*color: #FFFFFF;*/
+	background-color: #56b9ab;
+}
+
+.navbar-brand, .navbar-nav li a {
+	line-height: 55px;
+	height: 55px;
+	padding-top: 0px;
+	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #ffffff;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #175A94;
+}
+
+.page-header {
+	font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
+	/* border-bottom: 1px solid #bbb;*/
+}
+
+hr {
+	border-bottom: 1px solid #bbb;
+}
+
+.img_border {
+	border: 1px solid #bbb;
+}
+
+@media screen and (min-width: 800px) {
+	.container {
+		width: 800px;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.center_toaster {
+		right: 35%;
+		width: 30%;
+	}
+}
+
+@media screen and (min-width: 400px) and (max-width: 799px) {
+	.center_toaster {
+		right: 25%;
+		width: 50%;
+	}
+}
+
+@media screen and (min-width: 200px ) and (max-width: 399px) {
+	.center_toaster {
+		right: 10%;
+		width: 80%;
+	}
+}
+
+.row a {
+	text-decoration: none;
+}
+
+.row a:hover {
+	text-decoration: none;
+}
+
+.addMaigin {
+	margin-bottom: 30px;
+}
+
+.change_font {
+	font-size: 1.5em;
+}
+
+.button_width {
+	width: 4em;
+}
+
+.button_width2 {
+	width: 4em;
+}
+
+.wrapper {
+	min-height: 27%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -6em;
+	margin-left: 4%;
+}
+
+.push {
+	height: 6em;
+}
+
+.footer
+,
+{
+height
+:
+ 
+4
+em
+;
+
+        
+}
+.color_white {
+	background: #ffffff;
+}

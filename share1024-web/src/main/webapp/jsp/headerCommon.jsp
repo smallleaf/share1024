@@ -27,16 +27,15 @@
 										<span class="icon-bar"></span>
 									</button>
 								</div>
-
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="header-bottom">
 									<ul class="nav navbar-nav">
 										<li class="active"><a href="index.jsp">首页</a></li>
-										<li><a href="javaBiShe.jsp">Java毕业设计</a></li>
-										<li><a href="learning.jsp">Java资料</a></li>
-										<li><a href="blog.html">学习路线</a></li>
-										<li><a href="software.jsp">软件</a></li>
-										<li><a href="contact-us.html">Contac Us</a></li>
+										<li><a href="${basePath }/project/get/0/1">Java毕业设计</a></li>
+										<li><a href="jsp/learning.jsp">Java资料</a></li>
+										<li><a href="jsp/blog.html">学习路线</a></li>
+										<li><a href="jsp/software.jsp">软件</a></li>
+										<li><a href="jsp/contact-us.html">Contac Us</a></li>
 									</ul>
 									<form class="navbar-form navbar-right" role="search">
 										<div class="form-group">

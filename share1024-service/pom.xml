@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.share</groupId>
+    <artifactId>share1024</artifactId>
+    <version>1.0.1</version>
+  </parent>
+  <artifactId>share1024-service</artifactId>
+  <dependencies>
+  		<dependency>
+			<groupId>com.share</groupId>
+			<artifactId>share1024-utils</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.share</groupId>
+			<artifactId>share1024-model</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.share</groupId>
+			<artifactId>share1024-dao</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.31</version>
+		</dependency>
+  </dependencies>
+</project>

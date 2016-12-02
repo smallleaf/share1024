@@ -10,12 +10,18 @@
 	</parent>
 	<artifactId>share1024-web</artifactId>
 	<packaging>war</packaging>
-	<name>bishe-web Maven Webapp</name>
 	<dependencies>
 		<dependency>
 			<groupId>com.share</groupId>
 			<artifactId>share1024-utils</artifactId>
-			<version>1.0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.share</groupId>
+			<artifactId>share1024-service</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.share</groupId>
+			<artifactId>share1024-model</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -43,7 +49,6 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>19.0</version>
 		</dependency>
 
 		<dependency>
@@ -60,7 +65,26 @@
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.4</version>
+		</dependency>
+			<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+			<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.4.0</version>
 		</dependency>
 	</dependencies>
 

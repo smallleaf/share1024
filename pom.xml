@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.share</groupId>
-  <artifactId>share1024</artifactId>
-  <version>1.0.1</version>
-  <packaging>pom</packaging>
-  <modules>
-  	<module>share1024-utils</module>
-    <module>share1024-web</module>
-  </modules>
-  
-  <!-- 绑定插件 -->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.share</groupId>
+	<artifactId>share1024</artifactId>
+	<version>1.0.1</version>
+	<packaging>pom</packaging>
+
+	<modules>
+		<module>share1024-model</module>
+		<module>share1024-utils</module>
+		<module>share1024-dao</module>
+		<module>share1024-web</module>
+		<module>share1024-service</module>
+	</modules>
+
+	<!-- 绑定插件 -->
 	<build>
 		<plugins>
 			<!-- 让maven-compiler-plugin支持java6 -->
@@ -31,6 +36,7 @@
 		<org.springframework.version>4.2.8.RELEASE</org.springframework.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<project.version>1.0.1</project.version>
 	</properties>
 
 	<dependencies>
@@ -38,7 +44,6 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
@@ -65,6 +70,26 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
+				<groupId>com.share</groupId>
+				<artifactId>share1024-model</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.share</groupId>
+				<artifactId>share1024-dao</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.share</groupId>
+				<artifactId>share1024-service</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.share</groupId>
+				<artifactId>share1024-utils</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-core</artifactId>
 				<version>${org.springframework.version}</version>
@@ -84,6 +109,26 @@
 				<artifactId>spring-context-support</artifactId>
 				<version>${org.springframework.version}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework</groupId>
+				<artifactId>spring-tx</artifactId>
+				<version>${org.springframework.version}</version>
+			</dependency>
+			<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+			<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>19.0</version>
+		</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>

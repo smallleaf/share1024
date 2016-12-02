@@ -15,7 +15,7 @@
     </head>   
 	<body>
 		<!-- header -->
-		<%@ include file="headerCommon.jsp"%>
+		<%@ include file="jsp/headerCommon.jsp"%>
 		<!-- home -->
 		<section class="home">
 			<div class="intro">
