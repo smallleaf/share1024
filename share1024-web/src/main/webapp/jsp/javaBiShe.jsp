@@ -69,7 +69,7 @@
 													<h3>${item.projectName}</h3>
 													<strong>￥${item.money }</strong>
 													<div>
-														<a href="${basePath}/project/getContent/${item.contentUuid}" class="btn btn-default" role="button">购买</a>
+														<a href="${basePath}/project/${item.id}/${item.contentUuid}" class="btn btn-default" role="button">购买</a>
 													</div>
 												</div>
 											</div>
@@ -95,7 +95,7 @@
 													<h3>${item.projectName}</h3>
 													<strong>￥${item.money }</strong>
 													<div>
-														<a href="${basePath}/project/getContent/${item.contentUuid}" class="btn btn-default" role="button">购买</a>
+														<a href="${basePath}/project/${item.id}/${item.contentUuid}" class="btn btn-default" role="button">购买</a>
 														
 													</div>
 												</div>
@@ -135,7 +135,7 @@
 														<h3>${itemAll.projectName}</h3>
 														<strong>￥${itemAll.money }</strong>
 														<div>
-															<a href="${basePath}/project/getContent/${itemAll.contentUuid}" class="btn btn-default" role="button">购买</a>
+															<a href="${basePath}/project/${itemAll.id}/${itemAll.contentUuid}" class="btn btn-default" role="button">购买</a>
 														</div>
 													</div>
 												</div>
@@ -158,7 +158,7 @@
 														<h3>${itemAll.projectName}</h3>
 														<strong>￥${itemAll.money }</strong>
 														<div>
-															<a href="${basePath}/project/getContent/${itemAll.contentUuid}" class="btn btn-default" role="button">购买</a>
+															<a href="${basePath}/project${itemAll.id}/${itemAll.contentUuid}" class="btn btn-default" role="button">购买</a>
 														</div>
 													</div>
 												</div>
@@ -181,7 +181,7 @@
 														<h3>${itemAll.projectName}</h3>
 														<strong>￥${itemAll.money }</strong>
 														<div>
-															<a href="${basePath}/project/getContent/${itemAll.contentUuid}" class="btn btn-default" role="button">购买</a>
+															<a href="${basePath}/project/${itemAll.id}/${itemAll.contentUuid}" class="btn btn-default" role="button">购买</a>
 														</div>
 													</div>
 												</div>

@@ -33,4 +33,11 @@ public interface GraduationProjectDao {
 	 * @return
 	 */
 	public List<GraduationProject> findByTypeAndRecomment(Long type);
+	
+	/***
+	 * 根据id查找毕业设计
+	 * @param id
+	 * @return
+	 */
+	public GraduationProject findById(Integer id);
 }

@@ -44,4 +44,11 @@ public interface GraduationProjectService {
 	 * @return
 	 */
 	public List<GraduationProject> getRecommentProject(Long type);
+	
+	/**
+	 * 查找毕业设计
+	 * @param id
+	 * @return
+	 */
+	public GraduationProject getGraduationProject(Integer id);
 }

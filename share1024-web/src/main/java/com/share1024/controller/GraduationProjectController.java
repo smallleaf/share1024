@@ -110,14 +110,16 @@ public class GraduationProjectController {
 	 * @param uuid
 	 * @return
 	 */
-	@RequestMapping("getContent/{uuid}")
-	public ModelAndView findProjectContent(@PathVariable("uuid") String uuid){
+	@RequestMapping("{projectId}/{uuid}")
+	public ModelAndView findProjectContent(@PathVariable("uuid") String uuid,@PathVariable("projectId") String projectId){
 		if(StringUtils.isBlank(uuid)){
 			logger.info("uuid为空，查找毕业设计具体信息失败，请检查uuid");
 		}
+		logger.info("正在查找id为：{},uuid为:{}",projectId,uuid);
 		ModelAndView mav = new ModelAndView("projectDetail");
 		try {
 //			String content = new String(shareFileDao.findByUUid(uuid).getContent(), "utf-8");
+			mav.addObject("graduateProject", graduationProjectService.getGraduationProject(Integer.valueOf(projectId)));
 			mav.addObject("uuid", uuid);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

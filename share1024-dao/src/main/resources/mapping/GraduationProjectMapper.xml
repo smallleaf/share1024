@@ -25,6 +25,9 @@
 	<select id="findByType"  resultMap="GraduationProjectResult"  parameterType="java.lang.Long">
 		select * from share_bishe where bishe_type=#{type}  order by update_time desc
 	</select>
+	<select id="findById"  resultMap="GraduationProjectResult"  parameterType="java.lang.Integer">
+		select * from share_bishe where id=#{id};
+	</select>
 	<select id="findByTypeAndRecomment"  resultMap="GraduationProjectResult"  parameterType="java.lang.Long">
 		select * from share_bishe where bishe_type=#{type}  and recommend_status=1 order by update_time desc
 	</select>

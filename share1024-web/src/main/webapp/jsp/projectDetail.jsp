@@ -23,27 +23,22 @@
 						<div class="sidebar">
 							<div class="well wedget">
 								<div class="thumbnail">
-									<span class="service-link text-center">
-										<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-										<div class="list-inline">
-											<a href=""><i class="fa fa-eye"></i></a>
-											<a href=""><i class="fa fa-link"></i></a>
-										</div>
-									</span>
-									<div class="caption">
-										<div class="category"> 初级
-											<div class="pull-right">
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star"></i>
-												<i class="fa fa-star-o"></i>
-											</div>
-										</div>
-										<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-										<strong>￥50</strong>
-										<div><a href="#" class="btn btn-default" role="button">购买</a></div>
-									</div>
+										<span class="service-link text-center">
+													<img class="img-responsive bishe-img" src="${graduateProject.projectPic}" title="${graduateProject.projectDesc}">
+												</span>
+												<div class="caption">
+													<div class="category"> 
+														<c:if test="${graduateProject.projectType==0 }">初级</c:if>
+														<c:if test="${graduateProject.projectType==1 }">中级</c:if>
+														<c:if test="${graduateProject.projectType==2 }">高级</c:if>
+													</div>
+													<h3>${graduateProject.projectName}</h3>
+													<strong>￥${graduateProject.money }</strong>
+													<div>
+														<a href="${basePath}/project/${graduateProject.id}/${graduateProject.contentUuid}" class="btn btn-default" role="button">购买</a>
+														
+													</div>
+												</div>
 									</div>
 							</div>
 							<div class="well wedget">

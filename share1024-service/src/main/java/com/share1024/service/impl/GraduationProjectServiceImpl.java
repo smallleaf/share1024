@@ -43,4 +43,10 @@ public class GraduationProjectServiceImpl implements GraduationProjectService{
 		return graduationProjectDao.findByTypeAndRecomment(type);
 	}
 
+	@Override
+	public GraduationProject getGraduationProject(Integer id) {
+		// TODO Auto-generated method stub
+		return graduationProjectDao.findById(id);
+	}
+
 }

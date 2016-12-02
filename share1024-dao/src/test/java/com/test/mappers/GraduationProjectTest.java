@@ -4,6 +4,8 @@ package com.test.mappers;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -14,6 +16,7 @@ import com.share1024.model.GraduationProject;
 @ContextConfiguration({"classpath:spring-mybatis.xml"})
 public class GraduationProjectTest {
 	
+	private Logger looger = LoggerFactory.getLogger(GraduationProjectTest.class);
 	@Autowired
 	private GraduationProjectDao graduationProjectDao;
 	@Test
@@ -38,5 +41,9 @@ public class GraduationProjectTest {
 	@Test
 	public void testFindByType(){
 		System.out.println(graduationProjectDao.findByType(2L).toString());
+	}
+	@Test
+	public void findById(){
+		looger.info(graduationProjectDao.findById(10).toString());
 	}
 }

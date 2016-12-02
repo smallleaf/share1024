@@ -1,18 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" %>
+<%@ include file="../jstl/base.inc"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
 		<title>ChinaZ</title>
-        <!-- ALL STYLESHEET -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
 		<!--link href="css/blog-single.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet"-->
     </head>   
 	<body>
-		
 		<!-- header -->
 		<%@ include file="headerCommon.jsp"%>
 		<!-- recommented products -->
@@ -25,6 +21,8 @@
 							 	<strong>分类</strong>
 							 	<div class="heading-border b-color-6"></div>
 								<div class="list-group">
+								<a href="#" class="list-group-item"><span class="badge">12</span>配置大全</a>
+								<a href="#" class="list-group-item"><span class="badge">12</span>文档大全</a>
 								  <a href="#" class="list-group-item active">
 								  	<span class="badge">14</span>
 								    学习网站
@@ -501,9 +499,6 @@
 				</div>	
 			</div>
 		</footer>
-        <!-- ALL JAVASCRIPT -->         
-        <script src="js/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
+		<%@ include file="../jstl/footerbase.inc"%>
     </body>
 </html>
