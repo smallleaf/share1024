@@ -26,5 +26,13 @@
 			<artifactId>fastjson</artifactId>
 			<version>1.1.31</version>
 		</dependency>
+			<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+		</dependency>
+			<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+		</dependency>
   </dependencies>
 </project>
