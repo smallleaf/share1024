@@ -1,4 +1,4 @@
-package com.share1024.service;
+/*package com.share1024.service;
 
 import java.util.List;
 
@@ -37,3 +37,4 @@ public class GraduationProjectServiceTest {
 		graduationProjectServiceImpl.getGraduationProject(20);
 	}
 }
+*/
