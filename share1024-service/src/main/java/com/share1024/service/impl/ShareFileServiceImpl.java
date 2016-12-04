@@ -7,6 +7,7 @@ import org.apache.commons.io.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.share1024.dao.ShareFileDao;
@@ -48,6 +49,7 @@ public class ShareFileServiceImpl implements ShareFileService{
 	}
 
 	@Override
+	@Cacheable(value="projectCache",key="#uuid")
 	public String findShareFileByUuid(String uuid) {
 		// TODO Auto-generated method stub
 		ShareFile shareFile =shareFileDao.findByUUid(uuid);

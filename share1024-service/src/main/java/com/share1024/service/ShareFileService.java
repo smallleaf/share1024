@@ -20,6 +20,7 @@ public interface ShareFileService {
 	 */
 	public Object saveFile(String fileName,byte[] content,Long size) ;
 	
+	
 	/***
 	 * 通过uuid查找文件具体信息
 	 * @param uuid
