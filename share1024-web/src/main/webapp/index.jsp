@@ -11,6 +11,13 @@
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/jquery.flipster.css">
+		
+		 <script src="js/jquery.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="js/jquery.flipster.js"></script>  
+		<script>$(function(){ $(".flipster").flipster({ style: 'carousel', start: 0 }); });</script>
 		<!--link href="css/blog-single.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet"-->
     </head>   
@@ -68,52 +75,24 @@
 		</header>	
 		<!-- home -->
 		<section class="home">
-			<div class="intro">
-				<div id="home" class="carousel slide" data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#home" data-slide-to="0" class="active"></li>
-						<li data-target="#home" data-slide-to="1"></li>
-						<li data-target="#home" data-slide-to="2"></li>
-						<li data-target="#home" data-slide-to="3"></li>
-						<li data-target="#home" data-slide-to="4"></li>
-						<li data-target="#home" data-slide-to="5"></li>
-					</ol>
-					<div class="carousel-inner" role="listbox">
-						<div class="item active">
-							<div class="container">
-										<img class="img-responsive" src="images/person.png"  alt="" />
-							</div>	
-						</div>
-						<div class="item">
-							<div class="container">
-										<img class="img-responsive" src="images/option.png" alt="" />
-							</div>	
-						</div>
-						<div class="item">
-							<div class="container">
-										<img class="img-responsive" src="images/option.png" alt="" />
-							</div>	
-						</div>
-						<div class="item">
-							<div class="container">
-										<img class="img-responsive" src="images/person.png" alt="" />
-							</div>	
-						</div>
-						<div class="item">
-							<div class="container">
-										<img class="img-responsive" src="images/option.png" alt="" />
-							</div>	
-						</div>
-						<div class="item">
-							<div class="container">
-										<img class="img-responsive" src="images/person.png" alt="" />
-							</div>	
-						</div>
-					</div>
-					<!-- Controls -->
-					<a class="left carousel-control" href="#home" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-					<a class="right carousel-control" href="#home" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
-				</div>
+			<div class="flipster">
+				<ul>
+					<li>
+						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+					</li>
+					<li>
+						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+					</li>
+					<li>
+						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+					</li>
+					<li>
+						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+					</li>
+					<li>
+						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+					</li>
+			  	</ul>
 			</div>
 		</section>	
 		
@@ -636,9 +615,7 @@
 			</div>
 		</footer>
 			
-        <!-- ALL JAVASCRIPT -->         
-        <script src="js/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
+        <!-- ALL JAVASCRIPT -->    
+       
     </body>
 </html>

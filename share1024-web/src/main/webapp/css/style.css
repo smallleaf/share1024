@@ -1775,3 +1775,7 @@ section.social-icons{
 	border-bottom:solid 1px gray;
 	opacity: 0.2;
 }
+.banner{
+	min-width: 300px;
+	max-width: 600px;
+}
