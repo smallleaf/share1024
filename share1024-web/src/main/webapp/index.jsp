@@ -29,7 +29,9 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<div class="logo"><i class="fa fa-diamond"></i>Share1024</div>
+							<div class="logo">
+								<img alt="" src="images/logo.jpg">
+							</div>
 						</div>
 					</div>
 				</div>

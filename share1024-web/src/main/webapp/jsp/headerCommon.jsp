@@ -6,7 +6,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<div class="logo"><i class="fa fa-diamond"></i>Share1024</div>
+							<img alt="" src="${basePath}/images/logo.jpg">
 						</div>
 					</div>
 				</div>
