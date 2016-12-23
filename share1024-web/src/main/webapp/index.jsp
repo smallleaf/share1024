@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title>Share1024</title>
+		<title>share1024</title>
         <!-- ALL STYLESHEET -->
    	 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
    	 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
