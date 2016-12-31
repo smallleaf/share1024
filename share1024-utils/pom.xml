@@ -3,7 +3,7 @@
   <parent>
     <groupId>com.share</groupId>
     <artifactId>share1024</artifactId>
-    <version>1.0.2</version>
+    <version>${project.version}</version>
   </parent>
   <artifactId>share1024-utils</artifactId>
   

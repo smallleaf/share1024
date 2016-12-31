@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.share</groupId>
 	<artifactId>share1024</artifactId>
-	<version>1.0.2</version>
+	<version>${project.version}</version>
 	<packaging>pom</packaging>
 
 	<modules>
