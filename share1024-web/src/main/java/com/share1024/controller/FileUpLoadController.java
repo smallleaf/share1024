@@ -1,5 +1,6 @@
 package com.share1024.controller;
 
+import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.IOException;
 
@@ -15,6 +16,7 @@ import org.springframework.web.multipart.commons.CommonsMultipartFile;
 
 import com.share1024.response.ResponseUtil;
 import com.share1024.service.ShareFileService;
+import com.share1024.service.aliyun.OSSClientService;
 import com.share1024.service.impl.ShareFileServiceImpl;
 
 /***
@@ -32,6 +34,8 @@ public class FileUpLoadController {
 	
 	@Autowired
 	private ShareFileService ShareFileService;
+	@Autowired
+	private OSSClientService ossClientService;
 	
 	@RequestMapping("project")
 	@ResponseBody
@@ -53,5 +57,26 @@ public class FileUpLoadController {
 		long size = projectFile.getSize();
 		logger.info("正在上传毕业设计文件，名称为：{}",fileName);
 		return ShareFileService.saveFile(fileName,content,size);
+	}
+	
+	@RequestMapping("image")
+	@ResponseBody
+	public Object upLoadImage(MultipartFile projectPicLoad){
+		if(projectPicLoad.isEmpty()){
+			logger.info("文件上传为空");
+			return ResponseUtil.getFailResult("文件上传为空");
+		}
+		byte[] content = null ;
+		try {
+			content = projectPicLoad.getBytes();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			logger.info("====获取文件内容异常:{}",e.toString());
+			return  ResponseUtil.getFailResult("====获取文件内容异常"+e.toString());
+		}
+		String fileName = projectPicLoad.getOriginalFilename() ;
+		logger.info("正在上传图片，名称为：{}",fileName);
+		return ossClientService.upLoadBiSheImage(new ByteArrayInputStream(content), fileName);
 	}
 }

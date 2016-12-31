@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.share</groupId>
 	<artifactId>share1024</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2</version>
 	<packaging>pom</packaging>
 
 	<modules>
@@ -37,7 +37,7 @@
 		<org.springframework.version>4.2.8.RELEASE</org.springframework.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<project.version>1.0.1</project.version>
+		<project.version>1.0.2</project.version>
 	</properties>
 
 	<dependencies>

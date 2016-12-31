@@ -4,16 +4,16 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="share1024-utils-1.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-utils/share1024-utils">
+        <dependent-module archiveName="share1024-utils-1.0.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-utils/share1024-utils">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="share1024-service-1.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-service/share1024-service">
+        <dependent-module archiveName="share1024-service-1.0.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-service/share1024-service">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="share1024-dao-1.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-dao/share1024-dao">
+        <dependent-module archiveName="share1024-dao-1.0.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-dao/share1024-dao">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="share1024-model-1.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-model/share1024-model">
+        <dependent-module archiveName="share1024-model-1.0.2.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/share1024-model/share1024-model">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="java-output-path" value="/share1024-web/target/classes"/>

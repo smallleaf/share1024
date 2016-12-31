@@ -12,12 +12,12 @@ import org.apache.commons.lang.StringUtils;
  *msg 是用来放提示信息的，成功的返回数据不能放
  */
 public class ResponseUtil {
-	private static Map<String, Object> map ;
+	private Map<String, Object> map = new HashMap<String, Object>();
 	
 	
 	private ResponseUtil(int code,String msg,String key,Object value) {
 		// TODO Auto-generated constructor stub
-		map = new HashMap<String, Object>();
+		map.clear();
 		map.put("code", code);
 		if(StringUtils.isNotBlank(msg)){
 			map.put("message", msg);

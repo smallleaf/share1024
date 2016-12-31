@@ -3,7 +3,15 @@
   <parent>
     <groupId>com.share</groupId>
     <artifactId>share1024</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
   </parent>
   <artifactId>share1024-utils</artifactId>
+  
+  <dependencies>
+  <dependency>
+	    <groupId>com.aliyun.oss</groupId>
+	    <artifactId>aliyun-sdk-oss</artifactId>
+	    <version>2.3.0</version>
+		</dependency>
+  </dependencies>
 </project>

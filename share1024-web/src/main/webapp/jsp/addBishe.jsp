@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title>Share1024</title>
+		<title>share1024</title>
         <!-- ALL STYLESHEET -->
 		<link href="${basePath}/fileinput/css/fileinput.css" rel="stylesheet"/>
 		<!--link href="css/blog-single.css" rel="stylesheet">
@@ -24,7 +24,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4">
-							<div class="logo"><i class="fa fa-diamond"></i>Share1024</div>
+							<div class="logo"><img alt="" src="${basePath}/images/logo.jpg"></div>
 						</div>
 					</div>
 				</div>
@@ -112,17 +112,18 @@
 										    <label for="projectMoney">价格</label>
 										    <input  class="form-control" id="projectMoney" name="projectMoney" placeholder="请输入价格" required>
 										  </div>
-										  <div class="form-group">
+										  <div class="form-group" >
 										    <label for="projectFile">上传附件<span style="color:red;">(只支持markdown文件)</span></label>
-												<input id="projectFile"  name="projectFile" type="file" placeholder="只支持markdown文件" /> <br>	
-												 <input type="hidden" name="contentUuid" id="contentUuid" value=""/>
+												<input id="projectFile"   name="projectFile"  type="file" placeholder="只支持markdown文件" /> <br>	
+												<input type="hidden" name="contentUuid" id="contentUuid" value=""/>
 											</div>
-											<div class="form-group">
-										    <label for="projectPic">项目图片</label>
-										     <input class="form-control" name="projectPic" id="" placeholder="先上传好图片，然后链接拷贝过来" required></input>
-										  	</div>
+										  <div class="form-group">
+										    <label for="projectPicLoad">项目图片</label>
+												<input id="projectPicLoad" name="projectPicLoad" type="file" /><br>	
+												<input type="hidden" name="projectPic" id="projectPic" value=""/>
+											</div>
 										  	<div>
-										    <label for="projectPic">是否推荐</label>
+										    <label>是否推荐</label>
 										      <div>
 										     <label class="radio-inline">
 										     <input type="radio" name="recommend" id="recommend" value="0" checked> 否
