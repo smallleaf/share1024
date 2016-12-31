@@ -7,7 +7,5 @@
     <artifactId>share1024</artifactId>
     <version>${project.version}</version>
   </parent>
-  <groupId>com.share</groupId>
   <artifactId>share1024-common</artifactId>
-  <version>1.0.1</version>
 </project>
