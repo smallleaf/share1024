@@ -80,19 +80,19 @@
 			<div class="flipster">
 				<ul>
 					<li>
-						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+						<img class="banner" alt="" src="http://www.5itjob.com/itjob/uploads/160515/2-160515234130G1.jpg">
 					</li>
 					<li>
-						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+						<img class="banner" alt="" src="http://www.5itjob.com/itjob/uploads/160515/2-160515234130G1.jpg">
 					</li>
 					<li>
-						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+						<img class="banner" alt="" src="http://www.5itjob.com/itjob/uploads/160515/2-160515234130G1.jpg">
 					</li>
 					<li>
-						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+						<img class="banner" alt="" src="http://www.5itjob.com/itjob/uploads/160515/2-160515234130G1.jpg">
 					</li>
 					<li>
-						<img class="banner" alt="" src="http://img.ui.cn/data/file/2/0/2/161202.jpg">
+						<img class="banner" alt="" src="http://www.5itjob.com/itjob/uploads/160515/2-160515234130G1.jpg">
 					</li>
 			  	</ul>
 			</div>
