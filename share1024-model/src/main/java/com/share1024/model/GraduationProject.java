@@ -3,14 +3,15 @@ package com.share1024.model;
 import java.sql.Date;
 
 /**
- * 
- * Title:毕业设计实体类
+ * Title:毕业设计实体类.
  * Author:yes
  * Date:Nov 13, 2016-11:20:41 AM
  *
  */
-public class GraduationProject {
-	
+public class GraduationProject {	
+	/***
+	 * id
+	 */
 	private Integer id;
 	
 	/**

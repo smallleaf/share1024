@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title>ChinaZ</title>
+		<title>工具</title>
 		<!--link href="css/blog-single.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet"-->
     </head>   
@@ -23,7 +23,8 @@
 								<div class="list-group">
 								<a href="#" class="list-group-item"><span class="badge">12</span>配置大全</a>
 								<a href="#" class="list-group-item"><span class="badge">12</span>文档大全</a>
-								  <a href="#" class="list-group-item active">
+								<a href="#" class="list-group-item  active	"><span class="badge">12</span>工具大全</a>
+								  <a href="#" class="list-group-item">
 								  	<span class="badge">14</span>
 								    学习网站
 								  </a>
@@ -35,185 +36,6 @@
 						</div> <!-- sidebar -->
 					</div>
 					<div class="col-sm-9">
-						<div class="row">
-							<div class="col-sm-12">
-								<div class="">
-									<h1><span class="t-color-1">推荐</span> </h1>
-									<div class="heading-border b-color-1"></div>
-								</div>
-							</div>
-						</div> <!-- section title -->
-						
-						<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-							<ol class="carousel-indicators">
-								<li data-target="#carousel-example-generic" data-slide-to="0" class="active"><i class="fa fa-angle-left"></i></li>
-								<li data-target="#carousel-example-generic" data-slide-to="1"><i class="fa fa-angle-right"></i></li>
-							</ol>
-							<div class="carousel-inner" role="listbox">
-								<div class="item active">
-									<div class="row">
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<!--span class="e-label"><div>Sale</div></span-->
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> 初级
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>￥50</strong>
-													<div><a href="projectDetail.jsp" class="btn btn-default" role="button">购买</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> 初级
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>￥50</strong>
-													<div><a href="#" class="btn btn-default" role="button">购买</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> 初级
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>￥50</strong>
-													<div>
-														<a href="#" class="btn btn-default" role="button">购买</a></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="item">
-									<div class="row">
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<!--span class="e-label"><div>Sale</div></span-->
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> 购买
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>￥50</strong>
-													<div><a href="#" class="btn btn-default" role="button">购买</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> 初级
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>￥50</strong>
-													<div><a href="#" class="btn btn-default" role="button">购买</a></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> 初级
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>￥50</strong>
-													<div>
-														<a href="#" class="btn btn-default" role="button">购买</a></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 						<!-- desktop -->
 						<div class="featured-product desktop">
 							<div class="row">
@@ -225,244 +47,64 @@
 										</div>
 									</div> <!-- section title -->
 									<div class="row">
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<!--span class="e-label"><div>Sale</div></span-->
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
+										<c:forEach var="itemAll" items="${dataTools}" begin="0" end="2">
+											<div class="col-sm-4">
+												<div class="thumbnail">
+													<!--span class="e-label"><div>Sale</div></span-->
+													<span class="service-link text-center">
+														<img class="img-responsive bishe-img" src="${itemAll.toolPic }" alt="">
+													</span>
+													<div class="caption">
+														<h3>${itemAll.name }</h3>
+														<div>
+														<a href="${itemAll.panUrl }" target="_blank" class="btn btn-default" role="button">网盘下载</a>
+														<a href="${itemAll.officeWebSiteUrl }" target="_blank" class="btn btn-default" role="button">官网下载</a>
 														</div>
 													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
 												</div>
 											</div>
+											</c:forEach>
 										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div>
-														<a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
 									<div class="row">
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<!--span class="e-label"><div>Sale</div></span-->
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
+										<c:forEach var="itemAll" items="${dataTools}" begin="3" end="5">
+											<div class="col-sm-4">
+												<div class="thumbnail">
+													<!--span class="e-label"><div>Sale</div></span-->
+													<span class="service-link text-center">
+														<img class="img-responsive bishe-img" src="${itemAll.toolPic }" alt="">
+													</span>
+													<div class="caption">
+														<h3>${itemAll.name }</h3>
+														<div>
+														<a href="${itemAll.panUrl }" target="_blank" class="btn btn-default" role="button">网盘下载</a>
+														<a href="${itemAll.officeWebSiteUrl }" target="_blank" class="btn btn-default" role="button">官网下载</a>
 														</div>
 													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
 												</div>
 											</div>
+											</c:forEach>
 										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div>
-														<a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
-												</div>
-											</div>
-										</div>
-									</div>
 									<div class="row">
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<!--span class="e-label"><div>Sale</div></span-->
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
+										<c:forEach var="itemAll" items="${dataTools}" begin="6" end="8">
+											<div class="col-sm-4">
+												<div class="thumbnail">
+													<!--span class="e-label"><div>Sale</div></span-->
+													<span class="service-link text-center">
+														<img class="img-responsive bishe-img" src="${itemAll.toolPic }" alt="">
+													</span>
+													<div class="caption">
+														<h3>${itemAll.name }</h3>
+														<div>
+														<a href="${itemAll.panUrl}" target="_blank" class="btn btn-default" role="button">网盘下载</a>
+														<a href="${itemAll.officeWebSiteUrl }" target="_blank" class="btn btn-default" role="button">官网下载</a>
 														</div>
 													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
 												</div>
 											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-4">
-											<div class="thumbnail">
-												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
-													<div class="list-inline">
-														<a href=""><i class="fa fa-eye"></i></a>
-														<a href=""><i class="fa fa-link"></i></a>
-													</div>
-												</span>
-												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
-													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div>
-														<a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
-												</div>
-											</div>
+											</c:forEach>
 										</div>
 									</div>
 								</div>
-							</div>
 						</div> <!-- desktop -->
 						<!-- pagination -->
 						<nav>

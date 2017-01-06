@@ -1,0 +1,26 @@
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    
+<mapper namespace="com.share1024.dao.DataToolDao">
+	<resultMap type="DataTool" id="dataToolResult">
+		<id property="id" column="id"/>
+		<result property="panUrl" column="pan_url"/>
+		<result property="officeWebSiteUrl" column="office_webSite_url"/>
+		<result property="name" column="name"/>
+		<result property="recommendStatus" column="recommend_status"/>
+		<result property="createTime" column="create_time"/>
+		<result property="isDeleted" column="is_deleted"/>
+		<result property="toolPic" column="tool_pic"/>
+		<result property="toolType" column="tool_type"/>
+	</resultMap>
+
+	<select id="findAll"  resultMap="dataToolResult">
+		select * from data_tool where is_deleted=0  order by create_time desc
+	</select>
+	
+	<insert id="save" parameterType="DataTool">
+		insert into data_tool(name,pan_url,office_website_url,recommend_Status,tool_pic,tool_type)
+			values(#{name},#{panUrl},#{officeWebSiteUrl},#{recommendStatus},#{toolPic},#{toolType})
+	</insert>
+</mapper>

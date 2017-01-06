@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.share</groupId>
 	<artifactId>share1024</artifactId>
-	<version>${project.version}</version>
+	<version>1.0.2</version>
 	<packaging>pom</packaging>
 
 	<modules>
@@ -11,10 +11,9 @@
 		<module>share1024-model</module>
 		<module>share1024-utils</module>
 		<module>share1024-dao</module>
-		<module>share1024-web</module>
 		<module>share1024-service</module>
-    	
-  </modules>
+		<module>share1024-web</module>
+	</modules>
 
 	<!-- 绑定插件 -->
 	<build>

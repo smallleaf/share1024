@@ -1,64 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" %>
+<%@ include file="../../jstl/base.inc"%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
 		<title>ChinaZ</title>
-        <!-- ALL STYLESHEET -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
 		<!--link href="css/blog-single.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet"-->
     </head>   
 	<body>
-		
 		<!-- header -->
-		<!-- header -->
-		<header class="header">
-			<!-- logo and adds -->
-			<div class="logo-add">
-				<div class="container">
-					<div class="row">
-						<div class="logo">
-							<img alt="" src="images/logo.jpg">
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<!-- header bottom -->
-			<div class="header-bottom">
-				<div class="row">
-					<div class="col-sm-12">
-						<nav class="navbar navbar-default">
-							<div class="container">
-								<!-- Brand and toggle get grouped for better mobile display -->
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#header-bottom" aria-expanded="false">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-								</div>
-
-								<!-- Collect the nav links, forms, and other content for toggling -->
-								<div class="collapse navbar-collapse" id="header-bottom">
-									<ul class="nav navbar-nav">
-										<li><a>系统管理</a></li>
-										<li><a href="">Java毕业设计</a></li>
-										<li><a href="admin/viewTool">Java资料</a></li>
-										<li><a href="">学习路线</a></li>
-										<li><a href="">软件</a></li>
-									</ul>
-								</div>
-							</div>
-						</nav>
-					</div>	
-				</div>	
-			</div>	
-		</header>	
+		<%@ include file="../editHeaderCommon.jsp"%>
 		<!-- recommented products -->
 		<section class="featured-product recommented-product">
 			<div class="container">
@@ -69,10 +21,16 @@
 							 	<strong>分类</strong>
 							 	<div class="heading-border b-color-6"></div>
 								<div class="list-group">
+								<a href="#" class="list-group-item"><span class="badge">12</span>配置大全</a>
+								<a href="#" class="list-group-item"><span class="badge">12</span>文档大全</a>
+								<a href="#" class="list-group-item"><span class="badge">12</span>工具大全</a>
 								  <a href="#" class="list-group-item active">
-								    毕业设计
+								  	<span class="badge">14</span>
+								    学习网站
 								  </a>
-								  <a href="#" class="list-group-item">Java资料</a>
+								  <a href="#" class="list-group-item"><span class="badge">12</span>学习视频</a>
+								  <a href="#" class="list-group-item"><span class="badge">10</span>书籍</a>
+								  <a href="#" class="list-group-item"><span class="badge">8</span>优秀博客</a>
 								</div>
 							</div>
 						</div> <!-- sidebar -->
@@ -83,12 +41,14 @@
 							<div class="row">
 								<div class="col-sm-12">
 									<div class="row">
-										<div class="col-sm-10">
-											<span class="t-color-1" style="font-size:20px">全部</span>
-											<div class="heading-border b-color-6"  style="margin-bottom:10px"></div>
-										</div>
+										<div class="col-sm-12">
+											<div class="col-sm-10">
+												<span class="t-color-1" style="font-size:20px">全部</span>
+												<div class="heading-border b-color-6"  style="margin-bottom:10px"></div>
+											</div>
 										<div class="col-sm-1 col-sm-offset-1">
-											<a href="jsp/addBishe.jsp" class="btn btn-primary" style="font-size:12px" role="button">添加</a>
+											<a href="${basePath}/admin/addDataTool" class="btn btn-primary" style="font-size:12px" role="button">添加</a>
+										</div>
 										</div>
 									</div> <!-- section title -->
 									<div class="row">
@@ -96,25 +56,18 @@
 											<div class="thumbnail">
 												<!--span class="e-label"><div>Sale</div></span-->
 												<span class="service-link text-center">
-													<img class="img-responsive" src="images/f-pro-1.jpg" alt="">
+													<img class="img-responsive" src="${basePath}/images/f-pro-1.jpg" alt="">
 													<div class="list-inline">
 														<a href=""><i class="fa fa-eye"></i></a>
 														<a href=""><i class="fa fa-link"></i></a>
 													</div>
 												</span>
 												<div class="caption">
-													<div class="category"> category
-														<div class="pull-right">
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star"></i>
-															<i class="fa fa-star-o"></i>
-														</div>
-													</div>
 													<h3>Lorem ipsum dolor sit amet dolorem molestie</h3>
-													<strong>$899.00</strong>
-													<div><a href="#" class="btn btn-default" role="button">Add to Cart</a><span class="pull-right"><i class="fa fa-heart-o"></i> Add to Wishlist</span></div>
+													<div>
+													<a href="projectDetail.jsp" class="btn btn-default" role="button">网盘下载</a>
+													<a href="projectDetail.jsp" class="btn btn-default" role="button">官网下载</a>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -348,27 +301,7 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="footer-bottom">
-				<div class="container">		
-					<div class="row">	
-						<div class="col-sm-12 text-center">
-							<p>Copyright &copy; 2016.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-							<ul class="list-inline center-block">
-								<li><a href="#"><img src="images/card-1.png"></a></li>
-								<li><a href="#"><img src="images/card-2.png"></a></li>
-								<li><a href="#"><img src="images/card-3.png"></a></li>
-								<li><a href="#"><img src="images/card-4.png"></a></li>
-								<li><a href="#"><img src="images/card-5.png"></a></li>
-							</ul>
-						</div>
-					</div>
-				</div>	
-			</div>
-		</footer>
-        <!-- ALL JAVASCRIPT -->         
-        <script src="js/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
+	<%@ include file="../footerCommon.jsp"%>
+		<%@ include file="../../jstl/footerbase.inc"%>
     </body>
 </html>

@@ -72,7 +72,7 @@
 														<a href="${basePath}/project/${item.id}/${item.contentUuid}" class="btn btn-default" role="button">购买</a>
 													</div>
 												</div>
-											</div>
+												</div>
 											</div>
 										</c:forEach>
 									</div>
@@ -96,7 +96,6 @@
 													<strong>￥${item.money }</strong>
 													<div>
 														<a href="${basePath}/project/${item.id}/${item.contentUuid}" class="btn btn-default" role="button">购买</a>
-														
 													</div>
 												</div>
 											</div>

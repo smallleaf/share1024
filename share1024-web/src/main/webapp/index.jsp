@@ -57,7 +57,7 @@
 									<ul class="nav navbar-nav">
 										<li class="active"><a href="index.jsp">首页</a></li>
 										<li><a href="project/get/0/1">Java毕业设计</a></li>
-										<li><a href="jsp/learning.jsp">Java资料</a></li>
+										<li><a href="dataTool/findAll">Java资料</a></li>
 										<li><a href="jsp/learnPath.jsp">学习路线</a></li>
 										<li><a href="jsp/software.jsp">软件</a></li>
 										<li><a href="jsp/contact-us.html">Contac Us</a></li>

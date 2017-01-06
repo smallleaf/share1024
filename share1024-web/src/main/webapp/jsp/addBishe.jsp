@@ -14,6 +14,7 @@
 	color:red;
 }
 </style>
+
     </head>   
 	<body>
 		<!-- header -->
@@ -49,7 +50,7 @@
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="header-bottom">
 									<ul class="nav navbar-nav">
-										<li class="active"><a href="admin.jsp">系统管理</a></li>
+										<li class="active"><a href="${basePath}/admin.jsp">系统管理</a></li>
 									</ul>
 								</div>
 							</div>
@@ -145,7 +146,7 @@
 		<%@ include file="footerCommon.jsp"%>
         <!-- ALL JAVASCRIPT -->  
         <%@ include file="../jstl/footerbase.inc"%>      
-          <script type="text/javascript" src="${basePath}/fileinput/js/fileinput.js"></script>
+        <script type="text/javascript" src="${basePath}/fileinput/js/fileinput.js"></script>
 		<script type="text/javascript" src="${basePath}/fileinput/js/fileinput_locale_zh.js"></script>
 		<script type="text/javascript" src="${basePath}/js/fileLoad.js"></script>
 		<script type="text/javascript" src="${basePath}/js/jquery.validate.min.js"></script>

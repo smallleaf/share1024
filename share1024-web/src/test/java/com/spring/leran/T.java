@@ -12,7 +12,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.jdbc.support.JdbcAccessor;
 
 public class T {
-	
+
 	public void test1(){
 		ClassPathResource resource  = new ClassPathResource("");
 		BeanFactory beanFactory ;
