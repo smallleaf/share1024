@@ -47,6 +47,10 @@ public class GraduationProjectController {
 			logger.info("缺少参数:typeId");
 			return mav;
 		}
+		if(typeId>3){
+			return new ModelAndView("404/404");
+		}
+		
 		logger.info("正在查找毕设，类型id为:{}", typeId);
 		List<GraduationProject> projects = graduationProjectService
 				.getRecommentProject(typeId);
@@ -90,6 +94,7 @@ public class GraduationProjectController {
 			logger.info("缺少参数：projectName，projectDesc，projectType,projectMoney,contentUuid,projectPic,recommend");
 			return "addBishe";
 		}
+		
 		GraduationProject graduationProject = new GraduationProject();
 		graduationProject.setContentUuid(contentUuid);
 		graduationProject.setProjectName(projectName);
@@ -115,6 +120,7 @@ public class GraduationProjectController {
 		if(StringUtils.isBlank(uuid)){
 			logger.info("uuid为空，查找毕业设计具体信息失败，请检查uuid");
 		}
+		
 		logger.info("正在查找id为：{},uuid为:{}",projectId,uuid);
 		ModelAndView mav = new ModelAndView("projectDetail");
 		try {

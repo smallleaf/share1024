@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title>ChinaZ</title>
+		<title>系统管理</title>
         <!-- ALL STYLESHEET -->
         <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/font-awesome.min.css" rel="stylesheet">
@@ -51,6 +51,7 @@
 										<li><a href="admin/viewTool">Java资料</a></li>
 										<li><a href="">学习路线</a></li>
 										<li><a href="">软件</a></li>
+										<li><a href="admin/cache">缓存管理</a></li>
 									</ul>
 								</div>
 							</div>

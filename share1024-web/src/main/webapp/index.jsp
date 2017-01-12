@@ -56,7 +56,7 @@
 								<div class="collapse navbar-collapse" id="header-bottom">
 									<ul class="nav navbar-nav">
 										<li class="active"><a href="index.jsp">首页</a></li>
-										<li><a href="project/get/0/1">Java毕业设计</a></li>
+										<li><a href="project/get/0/1">Java项目</a></li>
 										<li><a href="dataTool/findAll">Java资料</a></li>
 										<li><a href="jsp/learnPath.jsp">学习路线</a></li>
 										<li><a href="jsp/software.jsp">软件</a></li>
@@ -610,7 +610,7 @@
 				<div class="container">		
 					<div class="row">	
 						<div class="col-sm-12 text-center">
-							<p>Copyright &copy; 2016.Company name All rights reserved.<a href="http://www.miitbeian.gov.cn">[鄂ICP备16022718号]</a></p>
+							<p>Copyright &copy; 2016.Company name All rights reserved. <a href="login.jsp">站长管理</a><a target="_blank" href="http://www.miitbeian.gov.cn"> [鄂ICP备16022718号]</a></p>
 						</div>
 					</div>
 				</div>	

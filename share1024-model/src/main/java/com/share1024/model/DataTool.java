@@ -1,5 +1,6 @@
 package com.share1024.model;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 /**
@@ -7,8 +8,13 @@ import java.sql.Date;
  * @author small leaf
  * Date:   2017年1月5日 下午10:18:49
  */
-public class DataTool {
+public class DataTool implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private Integer id;
 	
 	private String name;

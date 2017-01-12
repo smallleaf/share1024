@@ -7,7 +7,7 @@
 					<div class="row">
 						<div class="col-sm-4">
 							<div class="logo">
-								<img alt="" src="${basePath}/images/logo.jpg">
+								<a href="${basePath}/index.jsp"><img alt="" src="${basePath}/images/logo.jpg"></a> 
 							</div>
 						</div>
 					</div>
@@ -32,12 +32,12 @@
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="header-bottom">
 									<ul class="nav navbar-nav">
-										<li class="active"><a href="${basePath}/index.jsp">首页</a></li>
-										<li><a href="${basePath}/project/get/0/1">Java项目</a></li>
-										<li><a href="${basePath}/dataTool/findAll">Java资料</a></li>
+										<li class="active"><a >编辑</a></li>
+										<li><a href="${basePath}/admin/viewTool">Java毕业设计</a></li>
+										<li><a href="${basePath}/jsp/learning.jsp">Java资料</a></li>
 										<li><a href="${basePath}/jsp/learnPath.jsp">学习路线</a></li>
 										<li><a href="${basePath}/jsp/software.jsp">软件</a></li>
-										<li><a href="${basePath}/jsp/contact-us.html">Contac Us</a></li>
+										<li><a href="${basePath}/admin/cache">缓存管理</a></li>
 									</ul>
 									<form class="navbar-form navbar-right" role="search">
 										<div class="form-group">

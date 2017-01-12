@@ -4,6 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+
 /**
  * 系统管理
  * @author small leaf
@@ -12,7 +13,6 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("admin")
 public class AdminController {
-	
 	/***
 	 * 编辑工具
 	 * @return
@@ -32,4 +32,14 @@ public class AdminController {
 	public String addDataTool(){
 		return "editLearnData/addDataTool";
 	}
+	/**
+	 * 缓存管理
+	 * @return
+	 */
+	@RequestMapping("cache")
+	public String queryCache(){
+		return "admin/cache/cacheManage";
+	}
+	
+
 }

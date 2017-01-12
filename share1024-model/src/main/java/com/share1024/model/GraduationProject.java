@@ -1,5 +1,6 @@
 package com.share1024.model;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 /**
@@ -8,7 +9,12 @@ import java.sql.Date;
  * Date:Nov 13, 2016-11:20:41 AM
  *
  */
-public class GraduationProject {	
+public class GraduationProject implements Serializable{	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/***
 	 * id
 	 */

@@ -1,5 +1,6 @@
 package com.share1024.model;
 
+import java.io.Serializable;
 import java.sql.Blob;
 import java.sql.Date;
 
@@ -10,8 +11,12 @@ import java.sql.Date;
  * Date:Nov 18, 2016-5:16:03 PM
  *
  */
-public class ShareFile {
+public class ShareFile implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer id;
 	/***
 	 * 文件的唯一标志

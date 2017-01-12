@@ -1,0 +1,18 @@
+$(function(){
+	//清除所有
+	$("#clearAll").click(function(){
+		$.get("cache/removeAllCache",function(data){
+			if(data.code=='1'){
+				alert("清除成功！");
+			}
+		})
+	})
+	//清除projectCache
+	$("#projectCache").click(function(){
+		$.get("cache/clearProjectCache",function(data){
+			if(data.code=='1'){
+				alert("清除成功！");
+			}
+		})
+	})
+})

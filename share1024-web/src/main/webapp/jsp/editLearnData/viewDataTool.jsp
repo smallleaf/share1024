@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-		<title>ChinaZ</title>
+		<title>查看</title>
 		<!--link href="css/blog-single.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet"-->
     </head>   
@@ -47,7 +47,7 @@
 												<div class="heading-border b-color-6"  style="margin-bottom:10px"></div>
 											</div>
 										<div class="col-sm-1 col-sm-offset-1">
-											<a href="${basePath}/admin/addDataTool" class="btn btn-primary" style="font-size:12px" role="button">添加</a>
+											<a href="${basePath}/admin/addDataTool" class="btn btn-primary" style="font-size:12px" role="button"><span  class="text-default glyphicon glyphicon-plus"></span> 添加</a>
 										</div>
 										</div>
 									</div> <!-- section title -->

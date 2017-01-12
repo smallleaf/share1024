@@ -41,6 +41,7 @@
 	<mvc:resources mapping="/jstl/**" location="/jstl/" cache-period="31556926"/> 
 	<mvc:resources mapping="/fonts/**" location="/fonts/" cache-period="31556926"/> 
 	<mvc:resources mapping="/fileinput/**" location="/fileinput/" cache-period="31556926"/> 
+	<mvc:resources mapping="/jsp/**" location="/jsp/" cache-period="31556926"/> 
 	<!-- 文件上传 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="maxUploadSize" value="10485760" />  
