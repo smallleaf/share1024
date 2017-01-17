@@ -1,19 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" %>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-		<title>系统管理</title>
-        <!-- ALL STYLESHEET -->
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<!--link href="css/blog-single.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet"-->
-    </head>   
-	<body>
-		
-		<!-- header -->
+<%@ include file="/jsp/inc/base.inc"%>
+<c:set var="PAGE_TITLE" value="系统管理"></c:set>
+<%@ include file="/jsp/inc/bodybase.inc"%>
+<script type="text/javascript">
+	seajs.use('app',function(app){
+	})
+</script>	
 		<!-- header -->
 		<header class="header">
 			<!-- logo and adds -->
@@ -47,7 +40,7 @@
 								<div class="collapse navbar-collapse" id="header-bottom">
 									<ul class="nav navbar-nav">
 										<li><a>系统管理</a></li>
-										<li><a href="">Java毕业设计</a></li>
+										<li><a href="">Java项目</a></li>
 										<li><a href="admin/viewTool">Java资料</a></li>
 										<li><a href="">学习路线</a></li>
 										<li><a href="">软件</a></li>
@@ -367,9 +360,4 @@
 				</div>	
 			</div>
 		</footer>
-        <!-- ALL JAVASCRIPT -->         
-        <script src="js/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
-    </body>
-</html>
+<%@ include file="/jsp/inc/footerbase.inc"%>

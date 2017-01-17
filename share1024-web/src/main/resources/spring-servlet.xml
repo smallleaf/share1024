@@ -34,18 +34,20 @@
 		<property name="suffix" value=".jsp"></property>
 	</bean>
 	<mvc:resources mapping="/favicon.ico" location="/favicon.ico"/> 
-	<mvc:resources mapping="/images/**" location="/images/" cache-period="31556926"/>  
-	<mvc:resources mapping="/js/**" location="/js/" cache-period="31556926"/>  
+	<mvc:resources mapping="/images/**" location="/images/" />  
+	<mvc:resources mapping="/js/**" location="/js/" />  
 	<mvc:resources mapping="/css/**" location="/css/" cache-period="31556926"/> 
-	<mvc:resources mapping="/bootstrap/**" location="/bootstrap/" cache-period="31556926"/> 
-	<mvc:resources mapping="/jstl/**" location="/jstl/" cache-period="31556926"/> 
-	<mvc:resources mapping="/fonts/**" location="/fonts/" cache-period="31556926"/> 
-	<mvc:resources mapping="/fileinput/**" location="/fileinput/" cache-period="31556926"/> 
-	<mvc:resources mapping="/jsp/**" location="/jsp/" cache-period="31556926"/> 
+	<mvc:resources mapping="/bootstrap/**" location="/bootstrap/" /> 
+	<mvc:resources mapping="/jstl/**" location="/jstl/" /> 
+	<mvc:resources mapping="/fonts/**" location="/fonts/" /> 
+	<mvc:resources mapping="/fileinput/**" location="/fileinput/" /> 
+	<mvc:resources mapping="/jsp/**" location="/jsp/" /> 
 	<!-- 文件上传 -->
 	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
 		<property name="maxUploadSize" value="10485760" />  
 		<property name="defaultEncoding" value="utf-8" />  
 		 <property name="maxInMemorySize" value="4096"/>
 	</bean>
+	
+	
 </beans>

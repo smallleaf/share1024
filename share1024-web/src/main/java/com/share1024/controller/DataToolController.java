@@ -44,7 +44,7 @@ public class DataToolController {
 	public ModelAndView findAllDataTool(){
 		logger.info("正在查找所有的工具");
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("learning");
+		mav.setViewName("javaMaterial/javaTool");
 		List<DataTool> dataTools = dataToolservice.findAllDataTools();
 		mav.addObject("dataTools", dataTools);
 		return mav;

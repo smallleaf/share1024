@@ -37,7 +37,7 @@ public class FileUpLoadController {
 	@Autowired
 	private OSSClientService ossClientService;
 	
-	@RequestMapping("project")
+	@RequestMapping("file")
 	@ResponseBody
 	public Object uploadFile(MultipartFile projectFile){
 		if(projectFile.isEmpty()){

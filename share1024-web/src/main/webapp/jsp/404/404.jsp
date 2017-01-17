@@ -1,14 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<c:set var="basePath" value="${pageContext.request.contextPath}" /> 
+<%@ include file="/jstl/base.inc"%>
 <!DOCTYPE html>
 <html>
 <head>
 <title>404</title>
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Language" content="ro"/>
-
 <link rel="stylesheet" type="text/css" media="all" href="${basePath}/jsp/404/style.css" />
 <link rel="stylesheet" type="text/css" media="all" href="${basePath}/jsp/404/backgrounds.css" />
 <link rel="stylesheet" type="text/css" media="all" href="${basePath}/jsp/404/themes/blue/css/style.css" />

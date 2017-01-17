@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" %>
 <%@ include file="../jstl/base.inc"%>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>

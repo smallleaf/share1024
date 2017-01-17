@@ -42,7 +42,7 @@ public class GraduationProjectController {
 	 */
 	@RequestMapping("get/{typeId}/{page}")
 	public ModelAndView getAllProject(@PathVariable("typeId") Long typeId,@PathVariable("page") Long page) {
-		ModelAndView mav = new ModelAndView("javaBiShe");
+		ModelAndView mav = new ModelAndView("javaProject/javaProject");
 		if (typeId == null) {
 			logger.info("缺少参数:typeId");
 			return mav;

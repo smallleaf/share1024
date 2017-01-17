@@ -15,4 +15,8 @@
         http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-4.0.xsd  
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">    
         
+     <bean id="passwordHelper" class="com.share1024.service.shiro.service.PasswordHelper">
+        <property name="algorithmName" value="md5"/>
+        <property name="hashIterations" value="2"/>
+    </bean>
 </beans>  

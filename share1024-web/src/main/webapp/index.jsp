@@ -1,27 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8" %>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-		<title>share1024</title>
-        <!-- ALL STYLESHEET -->
-   	 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
-   	 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-		<link rel="stylesheet" href="css/jquery.flipster.css">
-		
-		 <script src="js/jquery.js"></script>
-        <script src="bootstrap/js/bootstrap.min.js"></script>
-        <script src="js/custom.js"></script>
-        <script src="js/jquery.flipster.js"></script>  
-		<script>$(function(){ $(".flipster").flipster({ style: 'carousel', start: 0 }); });</script>
-		<!--link href="css/blog-single.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet"-->
-    </head>   
-	<body>
+<%@ include file="/jsp/inc/base.inc"%>
+<c:set var="PAGE_TITLE" value="share1024"></c:set>
+<%@ include file="/jsp/inc/bodybase.inc"%>
+<script type="text/javascript">
+	seajs.use('app',function(app){
+		app.load("index");
+	})
+</script>
 		<!-- header -->
 			<header class="header">
 			<!-- logo and adds -->
@@ -616,8 +602,4 @@
 				</div>	
 			</div>
 		</footer>
-			
-        <!-- ALL JAVASCRIPT -->    
-       
-    </body>
-</html>
+<%@ include file="/jsp/inc/footerbase.inc"%>

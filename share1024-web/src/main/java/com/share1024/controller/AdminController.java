@@ -20,7 +20,7 @@ public class AdminController {
 	@RequestMapping("viewTool")
 	public ModelAndView editLearnData(){
 		ModelAndView mav = new ModelAndView();
-		mav.setViewName("editLearnData/viewDataTool");
+		mav.setViewName("admin/learnData/viewDataTool");
 		return mav;
 	}
 	
@@ -30,7 +30,7 @@ public class AdminController {
 	 */
 	@RequestMapping("addDataTool")
 	public String addDataTool(){
-		return "editLearnData/addDataTool";
+		return "admin/learnData/addDataTool";
 	}
 	/**
 	 * 缓存管理
