@@ -68,22 +68,43 @@
         <property name="sessionManager" ref="sessionManager"/>
         <property name="cacheManager" ref="cacheManagerShiro"/>
     </bean>
+    
+    <bean id="jCaptchaValidateFilter" class="com.share1024.service.shiro.jcaptcha.JCaptchaValidateFilter">
+        <property name="jcaptchaEbabled" value="true"/>
+        <property name="jcaptchaParam" value="jcaptchaCode"/>
+        <property name="failureKeyAttribute" value="shiroLoginFailure"/>
+    </bean>
 
     <!-- 相当于调用SecurityUtils.setSecurityManager(securityManager) -->
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
         <property name="staticMethod" value="org.apache.shiro.SecurityUtils.setSecurityManager"/>
         <property name="arguments" ref="securityManager"/>
     </bean>
+    
+    <!-- 基于Form表单的身份验证过滤器 -->
+    <bean id="authcFilter" class=" com.share1024.service.shiro.jcaptcha.MyFormAuthenticationFilter">
+        <property name="usernameParam" value="username"/>
+        <property name="passwordParam" value="password"/>
+        <property name="rememberMeParam" value="rememberMe"/>
+        <property name="failureKeyAttribute" value="shiroLoginFailure"/>
+    </bean>
 
     <!-- Shiro的Web过滤器 -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
-        <property name="loginUrl" value="/login.jsp"/>
+        <property name="loginUrl" value="/jsp/login.jsp"/>
+        <property name="filters">
+        	<util:map>
+        		<entry key="authc" value-ref="authcFilter"/>
+        		<entry key="jCaptchaValidate" value-ref="jCaptchaValidateFilter"></entry> 
+        	</util:map>
+        </property>
         <property name="filterChainDefinitions">
             <value>
             	/admin/*=user
             	/admin=user
             	/admin.jsp=user
+             	/login=jCaptchaValidate
             </value>
         </property>
     </bean>

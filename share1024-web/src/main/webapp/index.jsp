@@ -596,7 +596,7 @@
 				<div class="container">		
 					<div class="row">	
 						<div class="col-sm-12 text-center">
-							<p>Copyright &copy; 2016.Company name All rights reserved. <a href="login.jsp">站长管理</a><a target="_blank" href="http://www.miitbeian.gov.cn"> [鄂ICP备16022718号]</a></p>
+							<p>Copyright &copy; 2016.Company name All rights reserved. <a href="jsp/login.jsp">站长管理</a><a target="_blank" href="http://www.miitbeian.gov.cn"> [鄂ICP备16022718号]</a></p>
 						</div>
 					</div>
 				</div>	
