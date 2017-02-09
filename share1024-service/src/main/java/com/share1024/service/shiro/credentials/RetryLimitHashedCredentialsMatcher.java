@@ -6,12 +6,15 @@ import org.apache.shiro.authc.ExcessiveAttemptsException;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.cache.Cache;
 import org.apache.shiro.cache.CacheManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 
 public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher {
 
+	private Logger logger = LoggerFactory.getLogger(RetryLimitHashedCredentialsMatcher.class);
     private Cache<String, AtomicInteger> passwordRetryCache;
 
     public RetryLimitHashedCredentialsMatcher(CacheManager cacheManager) {
@@ -29,6 +32,7 @@ public class RetryLimitHashedCredentialsMatcher extends HashedCredentialsMatcher
         }
         if(retryCount.incrementAndGet() > 5) {
             //if retry count > 5 throw
+        	logger.info("===========尝试超过5次==============");
             throw new ExcessiveAttemptsException();
         }
 

@@ -19,6 +19,7 @@ public class UserDaoTest {
 	@Test
 	public void getUserByUserName(){
 		User user = userDao.getUserByUserName("yesheng");
-		System.out.println("=="+user.toString());
+		if(user!=null)
+			System.out.println("=="+user.toString());
 	}
 }
