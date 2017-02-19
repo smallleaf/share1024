@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Servers&apos;" deleteContents="true" description="Delete resource &apos;Servers&apos;" element1="/Servers" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1480751792115"/>&#x0A;<refactoring comment="Delete 5 resources" deleteContents="false" description="Delete 5 resources" element1="/share1024-dao" element2="/share1024-model" element3="/share1024-service" element4="/share1024-utils" element5="/share1024-web" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="5" stamp="1480751905239"/>
-</session>

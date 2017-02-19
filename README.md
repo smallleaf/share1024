@@ -30,3 +30,4 @@
 2. shiro cache 与spring注解缓存两个结合使用一直无法结合成功。我的想法是spring cache做数据缓存，而shiro只做验证缓存。现在暂时不用spring缓存，等到后面看看再用ecache缓存工具，还是再解决该问题。
 3. 解决2的问题，我们分开用两个不同的缓存xml,然后用两个不同的cacheManger注意命名要不一样
 4. 增加logback日志管理
+5. 去掉重eclipse 上的多余文件,从github导入项目后,删除其他 只留pom src即可
