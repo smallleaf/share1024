@@ -27,6 +27,7 @@ public class DiscardServer {
 				.channel(NioServerSocketChannel.class)
 				.childHandler(new ChannelInitializer<Channel>() {
 
+					
 					@Override
 					protected void initChannel(Channel ch) throws Exception {
 						// TODO Auto-generated method stub
