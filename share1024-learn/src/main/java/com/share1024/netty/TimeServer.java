@@ -1,7 +1,6 @@
 package com.share1024.netty;
 
 import io.netty.bootstrap.ServerBootstrap;
-import io.netty.channel.Channel;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelOption;
@@ -9,45 +8,47 @@ import io.netty.channel.EventLoopGroup;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioServerSocketChannel;
+import io.netty.handler.codec.LineBasedFrameDecoder;
+import io.netty.handler.codec.string.StringDecoder;
 
-/**
- * jetty 来创建服务器
- * @author small leaf
- * Date:   2017年2月7日 下午3:54:40
- */
 public class TimeServer {
-	
-	public void run(int port){
-		System.out.println("服务器正在启动");
-		EventLoopGroup boosGroup = new NioEventLoopGroup();
+
+	public void bind(int port) throws Exception {
+		//两个线程组 一个用来服务器接受客户端
+		EventLoopGroup bossGroup = new NioEventLoopGroup();
+		//一个用来 io请求
 		EventLoopGroup workerGroup = new NioEventLoopGroup();
 		try {
+			// 配置服务器的NIO线程租
 			ServerBootstrap b = new ServerBootstrap();
-			b.group(boosGroup, workerGroup)
-				.channel(NioServerSocketChannel.class)
-				.childHandler(new ChannelInitializer<SocketChannel>() {
+			b.group(bossGroup, workerGroup)
+					.channel(NioServerSocketChannel.class)
+					.option(ChannelOption.SO_BACKLOG, 1024)
+					.childHandler(new ChildChannelHandler());
 
-					@Override
-					protected void initChannel(SocketChannel ch) throws Exception {
-						// TODO Auto-generated method stub
-						ch.pipeline().addLast(new TimeServerHandler());
-					}
-				})
-				.option(ChannelOption.SO_BACKLOG, 1024)
-				.childOption(ChannelOption.SO_KEEPALIVE, true);
-			
-				ChannelFuture cf = b.bind(port).sync();
-				cf.channel().closeFuture().sync();
-		} catch (Exception e) {
-			// TODO: handle exception
-		}finally{
-			System.out.println("服务器已经关闭");
+			// 绑定端口，同步等待成功
+			ChannelFuture f = b.bind(port).sync();
+			// 等待服务端监听端口关闭
+			f.channel().closeFuture().sync();
+		} finally {
+			// 优雅退出，释放线程池资源
+			bossGroup.shutdownGracefully();
 			workerGroup.shutdownGracefully();
-			boosGroup.shutdownGracefully();
 		}
 	}
-	
-	public static void main(String[] args) {
-		new TimeServer().run(8081);
+
+	private class ChildChannelHandler extends ChannelInitializer<SocketChannel> {
+		@Override
+		protected void initChannel(SocketChannel arg0) throws Exception {
+			System.out.println("server initChannel..");
+			arg0.pipeline().addLast(new LineBasedFrameDecoder(1024));
+			arg0.pipeline().addLast(new StringDecoder());
+			arg0.pipeline().addLast(new TimeServerHandler());
+		}
+	}
+
+	public static void main(String[] args) throws Exception {
+
+		new TimeServer().bind(9090);
 	}
 }

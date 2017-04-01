@@ -1,5 +1,6 @@
 package com.share1024.controller;
 
+import com.google.common.io.Resources;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;

@@ -58,7 +58,7 @@ public class FileUpLoadController {
 		logger.info("正在上传毕业设计文件，名称为：{}",fileName);
 		return ShareFileService.saveFile(fileName,content,size);
 	}
-	
+
 	@RequestMapping("image")
 	@ResponseBody
 	public Object upLoadImage(MultipartFile projectPicLoad){

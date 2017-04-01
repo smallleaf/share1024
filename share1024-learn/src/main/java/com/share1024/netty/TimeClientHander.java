@@ -1,49 +1,52 @@
 package com.share1024.netty;
 
-import java.util.Date;
+import java.util.logging.Logger;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
-import io.netty.channel.ChannelFuture;
-import io.netty.channel.ChannelFutureListener;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
-import io.netty.handler.codec.MessageAggregationException;
 
-/**
- * 
- * @author small leaf Date: 2017年2月7日 下午4:38:01
- */
 public class TimeClientHander extends ChannelInboundHandlerAdapter {
 
-	private ByteBuf message;
+	private static final Logger logger = Logger
+			.getLogger(TimeClientHander.class.getName());
 
-	@Override
-	public void channelRead(final ChannelHandlerContext ctx, Object msg)
-			throws Exception {
-		/*
-		 * ByteBuf m = (ByteBuf) msg; try { long currentTimeMillis =
-		 * (m.readUnsignedInt()-123123132L)*1000L; System.out.println(new
-		 * Date(currentTimeMillis)); ctx.close(); } catch (Exception e) { //
-		 * TODO: handle exception }finally{ m.release(); }
-		 */
-		ByteBuf buf = (ByteBuf)msg;
-		 byte[] req = new byte[buf.readableBytes()];
-		 String body = new String(req,"utf-8");
-		 System.out.println("now is "+body);
+
+	public TimeClientHander() {
+		req = ("yesheng"+ System.getProperty("line.separator")).getBytes();
 	}
+	private  byte[] req;
 
 	@Override
 	public void channelActive(ChannelHandlerContext ctx) throws Exception {
-		byte[] req = "yesheng".getBytes();
-		message = Unpooled.buffer(req.length);
-		message.writeBytes(req);
+		//与服务端建立连接后
+		ByteBuf firstMessage = null;
+		for (int i=0;i<150;i++){
+			firstMessage = Unpooled.buffer(req.length);
+			firstMessage.writeBytes(req);
+			ctx.writeAndFlush(firstMessage);
+		}
+
+	}
+
+	@Override
+	public void channelRead(ChannelHandlerContext ctx, Object msg)
+			throws Exception {
+		System.out.println("client channelRead..");
+		//服务端返回消息后
+		String body = (String) msg;
+		System.out.println("Now is :" + body);
 	}
 
 	@Override
 	public void exceptionCaught(ChannelHandlerContext ctx, Throwable cause)
 			throws Exception {
-		cause.printStackTrace();
+		System.out.println("client exceptionCaught..");
+		// 释放资源
+		logger.warning("Unexpected exception from downstream:"
+				+ cause.getMessage());
 		ctx.close();
 	}
+
 }

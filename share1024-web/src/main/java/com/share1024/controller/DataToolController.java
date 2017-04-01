@@ -2,6 +2,7 @@ package com.share1024.controller;
 
 import java.util.List;
 
+import com.share1024.service.DataToolService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.share1024.model.DataTool;
-import com.share1024.service.DataToolService;
 
 @Controller
 @RequestMapping("dataTool")

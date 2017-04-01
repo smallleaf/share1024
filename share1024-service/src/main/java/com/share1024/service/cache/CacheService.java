@@ -12,12 +12,13 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class CacheService {
-	
+
 	private Logger logger = LoggerFactory.getLogger(CacheService.class);
 	/***
 	 * 清除毕业设计缓存
 	 */
 	@CacheEvict(value="projectCache",allEntries=true)
+
 	public void removeProjectCache(){
 		logger.info("===========清除projectCache缓存==============");
 	}
