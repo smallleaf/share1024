@@ -9,8 +9,5 @@ package org.share1024.aliyun;
  */
 public class OSSClientCommon {
 	
-	/***
-	 * buget名称
-	 */
 
 }
